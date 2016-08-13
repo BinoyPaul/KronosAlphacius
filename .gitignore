@@ -1,47 +1,49 @@
-# Windows image file caches
-Thumbs.db
-ehthumbs.db
+### Eclipse ###
+.classpath
+.project
 
-# Folder config file
-Desktop.ini
+### Java ###
+*.class
 
-# Recycle Bin used on file shares
-$RECYCLE.BIN/
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
 
-# Windows Installer files
-*.cab
-*.msi
-*.msm
-*.msp
+# Package Files #
+*.jar
+*.war
+*.ear
 
-# Windows shortcuts
-*.lnk
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
 
-# =========================
-# Operating System Files
-# =========================
 
-# OSX
-# =========================
 
+### Grails ###
+*.iws
+*Db.properties
+*Db.script
+.settings
+stacktrace.log
+/*.zip
+/plugin.xml
+/*.log
+/*DB.*
+/cobertura.ser
 .DS_Store
-.AppleDouble
-.LSOverride
 
-# Thumbnails
-._*
+# Ignoring all plugins except spring security plugin - Required for SSO login
+!/target/
+/target/*
+!/target/work/
+/target/work/*
+!/target/work/plugins/
+/target/work/plugins/*
+!/target/work/plugins/spring-security-core-2.0-RC3/
+!/target/work/plugins/spring-security-ldap-2.0-RC2/
 
-# Files that might appear in the root of a volume
-.DocumentRevisions-V100
-.fseventsd
-.Spotlight-V100
-.TemporaryItems
-.Trashes
-.VolumeIcon.icns
-
-# Directories potentially created on remote AFP share
-.AppleDB
-.AppleDesktop
-Network Trash Folder
-Temporary Items
-.apdisk
+/out/
+/web-app/plugins/*
+/web-app/WEB-INF/classes
+/.link_to_grails_plugins/
+/target-eclipse/
+/bin/
