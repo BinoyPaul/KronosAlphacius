@@ -6,7 +6,7 @@ class UrlMappings {
 //        action = [GET: "show"]
 //        }
        
-		"/locationRetrieve"(resource:"EngagementDetailsIfPresent",parseRequest: true){
+		"/locationRetrieve"(resource:"LocationFinder",parseRequest: true){
 			action = [POST: "save"]
 			}
 		

@@ -32,7 +32,7 @@ environments {
 			// See http://grails.org/doc/latest/guide/conf.html#dataSource for documentation
 			jmxEnabled = true
 			initialSize = 5
-			maxActive = 500
+			maxActive = 1
 			minIdle = 50
 			maxIdle = 250
 			maxWait = 10000

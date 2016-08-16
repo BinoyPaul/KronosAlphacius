@@ -1,6 +1,6 @@
 package binoalphaapp
 
-
+	
 import grails.rest.RestfulController;
 
 import javax.servlet.http.HttpServletRequest;
@@ -15,8 +15,8 @@ class LocationFinderController extends RestfulController{
 		super(ViewPmtResourceIntegration)
 	}
 	*/
-	def pmtResourceService
-	def authenticationService
+	def testService
+	
 		/**
 		 * Hits the {@link resthcm.PmtResourceService}
 		 *
@@ -45,9 +45,10 @@ class LocationFinderController extends RestfulController{
 		log.debug("pmpk SOW ID : "+pmpkSowId)
 		log.debug("pmpk Subgroup ID : "+pmpkSubgroupId)
 	*/	
-		
+		Long locationID = inputJson.locationId; 
+		log.debug("locationID from request is "+locationID)
 		def locationDetails
-		locationDetails = TestService.locationFinder("abc");
+		locationDetails = testService.locationFinder(1); 
 		
 		
 		//	log.debug(" This is present in EngagementDetailsIfPresentController "+ pmtResourceService.engDetailsIfPresent(pmpkSowId,pmpkSubgroupId) );
@@ -60,6 +61,7 @@ class LocationFinderController extends RestfulController{
 	 catch(Exception e)
 	 {
 		 log.debug("At the catch of LocationFinderController save()");
+		 log.debug("The error is : "+e);
 		 render(contentType: "application/json") {
 				[errorMessage:e.toString()]
 		}
