@@ -48,7 +48,7 @@ class LocationFinderController extends RestfulController{
 		Long locationID = inputJson.locationId; 
 		log.debug("locationID from request is "+locationID)
 		def locationDetails
-		locationDetails = testService.locationFinder(1); 
+		locationDetails = testService.locationFinder(locationID); 
 		
 		
 		//	log.debug(" This is present in EngagementDetailsIfPresentController "+ pmtResourceService.engDetailsIfPresent(pmpkSowId,pmpkSubgroupId) );
